@@ -1,6 +1,6 @@
 @use "abstract" as *;
 
-.hamburger-menu{
+.hamburger-btn{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -23,12 +23,12 @@
         transform: rotate(0);
     }
 
-    @include media(tablet){
+    @include media(desktop){
         display: none;
     }
 }
 
-.hamburger-menu.active{
+.hamburger-btn.active{
     span{
         transition: transform 300ms linear ,opacity 600ms linear;
         transform-origin: left;
@@ -44,3 +44,4 @@
         transform: rotate(-45deg);
     }
 }
+

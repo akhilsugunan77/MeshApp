@@ -1,7 +1,12 @@
 @use "abstract" as *;
+@use "animation" as *;
+@use "helper" as *;
 
 .hero{
     @include size(100%,100vh);
+    header{
+        position: relative;
+    }
     .navigation{
         display: flex;
         align-items: center;
@@ -13,10 +18,76 @@
         }
         .navigation-listitem{
             display: none;
-            @include media(tablet){
+            gap: 30px;
+            font-size: 25px;
+            letter-spacing: 0.65px;
+            @include media(desktop){
                 display: flex;
-                gap: 20px;
+            }
+            li{
+                @extend .underline;
             }
         }
     }
+    .mobile-navigation{
+        @include size(100%,100vh);
+        @include media(tablet){
+            width: 50%;
+        }
+        @include media(desktop){
+           display: none;
+        }
+        position: absolute;
+        right: 0;
+        z-index: 5;
+        @extend .spotlight;
+        .navigation-listitem{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:30px;
+            padding-top: 30px;
+            font-size: 25px;
+            letter-spacing: 0.65px;
+            li{
+                @extend .underline;
+            }
+        }
+        @extend .grow-h;
+    }
+
+    div.container{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include media(tablet){
+            flex-direction: row;
+        }
+    }
+
+    .content{
+        height: 100%;
+        max-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 68px;
+        .heading{
+            font-size: 40px;
+            letter-spacing: 1.04px;
+            color: $secondary-color;
+            span{
+                font-weight: 300;
+            }
+        }
+        .description{
+            font-size: 25px;
+            font-weight: 300;
+            letter-spacing: 0.65px;
+            padding-right: 50px;
+        }
+    }
+
 }

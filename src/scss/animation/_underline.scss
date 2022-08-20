@@ -1,0 +1,18 @@
+@use "abstract" as *;
+
+.underline{
+    position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    @include size(100%,2px);
+                    background-color: $secondary-color;
+                    transition: transform 200ms linear;
+                    transform-origin: center;
+                    transform: scaleX(0)
+                }
+                &:hover::before{
+                    transform: scaleX(1);
+                }
+}

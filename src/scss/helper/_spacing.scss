@@ -1,0 +1,58 @@
+@use "sass:string";
+
+$values:2 4 6 8 10 12 14;
+$values-2:5 10 15 20;  
+$directions:"top","right","bottom","left";
+$base:"margin","padding";
+
+// ================================  all ===============================================
+@each $b in $base{
+    @each $value in $values{
+        @each $direction in $directions{
+            .#{string.slice($b,1,1)}#{string.slice($direction,1,1)}-#{$value}{
+                #{$b}-#{$direction}:#{$value}px;
+            }
+        }
+    }
+}
+
+// ================================   Y ===============================================
+
+@each $b in $base{
+    @each $v in $values-2{
+            .#{string.slice($b,1,1)}y-#{$v}{
+                #{$b}-top:#{$v}px;
+                #{$b}-bottom:#{$v}px;
+        }
+    } 
+
+}
+
+// ================================  X ===============================================
+@each $b in $base{
+    @each $v in $values-2{
+            .#{string.slice($b,1,1)}x-#{$v}{
+                #{$b}-right:#{$v}px;
+                #{$b}-left:#{$v}px;
+        }
+    } 
+
+}
+
+
+.m-auto{
+    margin: auto;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}

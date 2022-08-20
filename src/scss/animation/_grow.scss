@@ -1,0 +1,20 @@
+
+.grow-v{
+    transition: transform 200ms linear;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.grow-v.active{
+    transform: scaleY(1);
+}
+
+.grow-h{
+    transition: transform 300ms linear;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.grow-h.active{
+    transform: scaleX(1);
+}
