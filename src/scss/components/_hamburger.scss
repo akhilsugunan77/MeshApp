@@ -1,0 +1,46 @@
+@use "abstract" as *;
+
+.hamburger-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    span{
+        display: inline-block;
+        @include size(40px,4px);
+        background-color: $secondary-color;
+        transition: transform 300ms linear ,opacity 200ms linear;
+        transform-origin: left;
+    }
+    span:first-child{
+        transform: rotate(0);
+    }
+    span:nth-child(2){
+        transform: translateX(0);
+        opacity: 1;
+    }
+    span:last-child{
+        transform: rotate(0);
+    }
+
+    @include media(tablet){
+        display: none;
+    }
+}
+
+.hamburger-menu.active{
+    span{
+        transition: transform 300ms linear ,opacity 600ms linear;
+        transform-origin: left;
+    }
+    span:first-child{
+        transform: rotate(45deg);
+    }
+    span:nth-child(2){
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    span:last-child{
+        transform: rotate(-45deg);
+    }
+}

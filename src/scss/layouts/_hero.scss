@@ -1,0 +1,22 @@
+@use "abstract" as *;
+
+.hero{
+    @include size(100%,100vh);
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-inline: 20px;
+        @include media (desktop){
+            padding-inline:10px;
+        }
+        .navigation-listitem{
+            display: none;
+            @include media(tablet){
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+}
