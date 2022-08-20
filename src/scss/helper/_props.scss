@@ -9,11 +9,25 @@
     background-image: linear-gradient(108deg, $theme-color-1 17%, $theme-color-2 77%);
 }
 
+.block{
+    display: block;
+}
+
 .flex{
     display: flex;
+}
+
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-col{
     display: flex;
     flex-direction: column;
+}
+
+.gap-60{
+    gap: 60px;
 }

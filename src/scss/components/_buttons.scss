@@ -1,0 +1,41 @@
+@use "abstract" as *;
+
+%button{
+    @include size(224px,81px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+    letter-spacing: 0.65px;
+    border-radius: 12px;
+}
+
+.button-primary{
+    background-color: transparent;
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
+    @extend %button;
+}
+
+.button-outline-primary{
+    background-color: transparent;
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
+    border: solid 2px $quaternary-color;
+    @extend %button;
+}
+.button-secondary{
+    background-color: transparent;
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
+    @extend %button;
+}
+
+.button-outline-secondary{
+    background-color: transparent;
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
+    border: solid 2px $quaternary-color;
+    @extend %button;
+}
+
+.button-rounded{
+    border-radius: 100px;
+}

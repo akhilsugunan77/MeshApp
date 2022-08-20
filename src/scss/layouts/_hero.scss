@@ -3,65 +3,19 @@
 @use "helper" as *;
 
 .hero{
-    @include size(100%,100vh);
+    @include size(100%,100%);
+    min-height: 100vh;
+    position: relative;
     header{
         position: relative;
     }
-    .navigation{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 20px;
-        padding-inline: 20px;
-        @include media (desktop){
-            padding-inline:10px;
-        }
-        .navigation-listitem{
-            display: none;
-            gap: 30px;
-            font-size: 25px;
-            letter-spacing: 0.65px;
-            @include media(desktop){
-                display: flex;
-            }
-            li{
-                @extend .underline;
-            }
-        }
-    }
-    .mobile-navigation{
-        @include size(100%,100vh);
-        @include media(tablet){
-            width: 50%;
-        }
-        @include media(desktop){
-           display: none;
-        }
-        position: absolute;
-        right: 0;
-        z-index: 5;
-        @extend .spotlight;
-        .navigation-listitem{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap:30px;
-            padding-top: 30px;
-            font-size: 25px;
-            letter-spacing: 0.65px;
-            li{
-                @extend .underline;
-            }
-        }
-        @extend .grow-h;
-    }
-
     div.container{
         height: 90%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        @include media(tablet){
+        justify-content: space-between;
+        align-items: center;
+        @include media(desktop){
             flex-direction: row;
         }
     }
@@ -73,6 +27,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include media(desktop){
+            align-self: center;
+        }
         gap: 68px;
         .heading{
             font-size: 40px;
@@ -88,6 +45,20 @@
             letter-spacing: 0.65px;
             padding-right: 50px;
         }
+        .btn-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            align-items: center;
+            @include media(tablet){
+                flex-direction: row;
+            }        
+        }
     }
 
+    .banner{
+        display: flex;
+        max-width: 520px;
+        max-height: 612px;
+    }
 }

@@ -1,0 +1,60 @@
+@use "abstract" as *;
+@use "animation" as *;
+@use "helper" as *;
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-inline: 20px;
+    @include media (desktop){
+        padding-inline:10px;
+        padding-top: 66px;
+    }
+    .navigation-listitem{
+        display: none;
+        gap: 30px;
+        font-size: 25px;
+        letter-spacing: 0.65px;
+        @include media(desktop){
+            display: flex;
+        }
+        li{
+            @extend .underline;
+        }
+    }
+}
+
+
+.mobile-navigation{
+    @include size(100%,100vh);
+    @include media(tablet){
+        width: 50%;
+    }
+    @include media(desktop){
+       display: none;
+    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 100px;
+    z-index: 3;
+    border-radius: 50px 0 0 50px;
+    background-color: $theme-color-2;
+    // @extend .spotlight;
+    .navigation-listitem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+        padding-top: 30px;
+        font-size: 25px;
+        letter-spacing: 0.65px;
+        li{
+            @extend .underline;
+        }
+    }
+    @extend .grow-h;
+}
