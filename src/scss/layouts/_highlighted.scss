@@ -1,0 +1,37 @@
+@use "abstract" as *;
+
+.highlighted{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    @include media(desktop){
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .content{
+        max-width: 600px;
+        width: 100%;
+        z-index: 1;
+        .heading{
+            font-size: 40px;
+            letter-spacing: 1.23px;
+            color:$teritary-color;
+        }
+        .sub-heading{
+            font-size: 30px;
+            letter-spacing: 0.92px;
+            color: $quinary-color;
+        }
+        .description{
+            font-size: 22px;
+            letter-spacing: 0.68px;
+            color: $teritary-color;
+        }
+    }
+    .img-content{
+        max-width: 500px;
+        width: 100%;
+    }
+}

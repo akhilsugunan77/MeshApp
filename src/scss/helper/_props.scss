@@ -3,10 +3,26 @@
     max-width: 1240px;
     width: 100%;
     margin-inline:auto;
+    padding-inline: 20px;
+    @include media(desktop){
+        padding-inline: 0;
+    }
 }
 
 .spotlight{
     background-image: linear-gradient(108deg, $theme-color-1 17%, $theme-color-2 77%);
+}
+
+.bg-highlighted{
+    background-color: $light-color;
+}
+
+.relative{
+    position: relative;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .block{
@@ -17,6 +33,11 @@
     display: flex;
 }
 
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .flex-wrap{
     display: flex;

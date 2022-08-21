@@ -1,0 +1,8 @@
+@use "abstract" as *;
+
+.band{
+    position: absolute;
+    height: 100%;
+    width: 168px;
+    background-color:$primary-color;
+}
