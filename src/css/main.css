@@ -1230,7 +1230,7 @@ button {
 }
 @media screen and (max-width: 599px) {
   .hero .content {
-    gap: 40px;
+    gap: 30px;
   }
 }
 .hero .content .heading {
