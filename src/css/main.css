@@ -1230,7 +1230,7 @@ button {
 }
 @media screen and (max-width: 599px) {
   .hero .content {
-    gap: 30px;
+    gap: 40px;
   }
 }
 .hero .content .heading {
@@ -1262,6 +1262,11 @@ button {
   flex-direction: column;
   gap: 60px;
   align-items: center;
+}
+@media screen and (max-width: 599px) {
+  .hero .content .btn-wrapper {
+    gap: 30px;
+  }
 }
 @media screen and (min-width: 600px) {
   .hero .content .btn-wrapper {

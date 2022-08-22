@@ -36,7 +36,7 @@
         justify-content: center;
         gap: 68px;
         @include media(mobile){
-            gap: 30px;
+            gap: 40px;
         }
         .heading{
             font-size: 40px;
@@ -63,9 +63,12 @@
             flex-direction: column;
             gap: 60px;
             align-items: center;
+            @include media(mobile){
+                gap: 30px;
+            }
             @include media(tablet){
                 flex-direction: row;
-            }        
+            }            
         }
     }
 
