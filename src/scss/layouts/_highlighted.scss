@@ -24,16 +24,25 @@
             font-size: 40px;
             letter-spacing: 1.23px;
             color:$tertiary-color;
+            @include media(mobile){
+                font-size: 30px;
+            }
         }
         .sub-heading{
             font-size: 30px;
             letter-spacing: 0.92px;
             color: $quinary-color;
+            @include media(mobile){
+                font-size: 20px;
+            }
         }
         .description{
             font-size: 22px;
             letter-spacing: 0.68px;
             color: $tertiary-color;
+            @include media(mobile){
+                font-size: 16px;
+            }
         }
     }
     .img-content{

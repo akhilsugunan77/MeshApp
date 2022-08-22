@@ -6,6 +6,9 @@ footer{
     font-size: 20px;
     letter-spacing: 0.19px;
     font-weight: 600;
+    @include media(mobile){
+        font-size: 16px;
+    }
     .copyright{
         display: inline-block;
         color: $septenary-color;

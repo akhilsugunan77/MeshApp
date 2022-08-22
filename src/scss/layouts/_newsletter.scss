@@ -10,11 +10,17 @@
         font-size: 50px;
         line-height: 55px;
         letter-spacing: 1.3px;
+        @include media(mobile){
+                font-size: 30px;
+        }
     }
     .description{
         color: $tertiary-color ;
         font-size: 25px;
         letter-spacing: 0.65px;
+        @include media(mobile){
+                font-size: 20px;
+        }
     }
 
     .input-container{

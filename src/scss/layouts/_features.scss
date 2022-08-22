@@ -6,6 +6,9 @@
         color:$tertiary-color;
         font-size: 50px;
         letter-spacing: 1.3px;
+        @include media(mobile){
+            font-size: 30px;
+        }
     }
     .feature-content{
         display: flex;
@@ -17,6 +20,9 @@
             font-size: 30px;
             letter-spacing: 0.78px;
             font-weight: 600;
+            @include media(mobile){
+                font-size: 20px;
+            }
         }
         article{
             display: flex;

@@ -38,12 +38,18 @@
             span{
                 font-weight: 300;
             }
+            @include media(mobile){
+                font-size: 30px;
+            }
         }
         .description{
             font-size: 25px;
             font-weight: 300;
             letter-spacing: 0.65px;
             padding-right: 50px;
+            @include media(mobile){
+                font-size: 20px;
+            }
         }
         .btn-wrapper{
             display: flex;
