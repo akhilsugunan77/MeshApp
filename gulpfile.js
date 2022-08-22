@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync =require("browser-sync").create();
 const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const webp = require('gulp-webp');
 // css
 
 function style(){
@@ -30,10 +31,22 @@ function watch(){
     gulp.watch("./src/js/**/*.js",bundlejs);
 }
 
+function webpConvert(){
+    return gulp.src('./src/assets/images/png/**/*.*')
+        .pipe(webp())
+        .pipe(gulp.dest("./public/assets/images/webp/"));
+}
+
+function png(){
+    return gulp.src('src/assets/images/png/**/*.*')
+        .pipe(gulp.dest(["./public/assets/images/png/"]));
+}
 
 exports.style = style;
 exports.watch = watch;
 exports.bundlejs = bundlejs;
+exports.png=png;
+exports.webpConvert=webpConvert;
 
 // Image minification
 
@@ -46,7 +59,7 @@ exports.bundlejs = bundlejs;
 //     .pipe(gulp.dest("public/assets/Images"))
 // })
 
-// build
+build
 
 function buildStyle(){
     return gulp.src("./src/scss/**/*.scss")

@@ -1141,6 +1141,13 @@ button {
   letter-spacing: 0.65px;
   border-radius: 12px;
 }
+@media screen and (max-width: 599px) {
+  .button-outline-secondary, .button-secondary, .button-outline-primary, .button-primary {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
 
 .button-primary {
   background-color: transparent;
@@ -1166,6 +1173,13 @@ button {
   border-radius: 0;
   width: 173px;
   height: 70px;
+}
+@media screen and (max-width: 599px) {
+  .button-secondary {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
 }
 .button-secondary:hover {
   box-shadow: 0 6px 9px 0 rgba(244, 214, 58, 0.59);

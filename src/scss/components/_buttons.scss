@@ -3,6 +3,10 @@
 
 %button{
     @include size(224px,81px);
+    @include media(mobile){
+        @include size(200px,60px);
+        font-size: 20px;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +43,10 @@
     border-radius: 0;
     width: 173px;
     height: 70px;
+    @include media(mobile){
+        @include size(150px,50px);
+        font-size: 20px;
+    }
     &:hover{
         box-shadow: 0 6px 9px 0 rgba(244, 214, 58, 0.59);
     }
