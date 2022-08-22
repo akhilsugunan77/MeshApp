@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync =require("browser-sync").create();
-// const cleanCss = require('gulp-clean-css');
+const cleanCss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 // css
 
@@ -51,7 +51,7 @@ exports.bundlejs = bundlejs;
 function buildStyle(){
     return gulp.src("./src/scss/**/*.scss")
             .pipe(sass().on("error",sass.logError))
-            // .pipe(cleanCss())
+            .pipe(cleanCss())
             .pipe(gulp.dest("./public/css"))
             .pipe(browserSync.stream());
 }
