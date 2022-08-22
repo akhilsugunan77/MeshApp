@@ -1158,6 +1158,7 @@ button {
   background-color: transparent;
   box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
   border: solid 2px #3e3e3e;
+  transition: box-shadow 500ms linear;
 }
 .button-outline-primary:hover {
   box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2);
