@@ -58,3 +58,18 @@
     }
     @extend .grow-h;
 }
+
+
+.footer-navigation{
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        li{
+            &::before{
+                background-color: #ffffff;
+            }
+        }
+    }
+}

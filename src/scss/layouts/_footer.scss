@@ -1,0 +1,13 @@
+@use "abstract" as *;
+
+footer{
+    background-color: $senary-color;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.19px;
+    font-weight: 600;
+    .copyright{
+        display: inline-block;
+        color: $septenary-color;
+    }
+}
