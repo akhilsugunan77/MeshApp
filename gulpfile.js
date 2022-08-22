@@ -46,3 +46,28 @@ exports.bundlejs = bundlejs;
 //     .pipe(imagemini())
 //     .pipe(gulp.dest("public/assets/Images"))
 // })
+
+// build
+
+function buildStyle(){
+    return gulp.src("./src/scss/**/*.scss")
+            .pipe(sass().on("error",sass.logError))
+            // .pipe(cleanCss())
+            .pipe(gulp.dest("./public/css"))
+            .pipe(browserSync.stream());
+}
+
+function buildJs(){
+    return gulp.src("./src/js/**/*.js")
+    .pipe(concat("main.js"))
+    .pipe(gulp.dest("./public/js"))
+}
+
+function buildHtml(){
+    return gulp.src("./src/**/*.html")
+    .pipe(gulp.dest("./public/"))
+}
+
+exports.buildHtml=buildHtml;
+exports.buildJs=buildJs;
+exports.buildStyle=buildStyle;
