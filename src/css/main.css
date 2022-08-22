@@ -173,6 +173,10 @@ button {
   display: block;
 }
 
+.ib {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }

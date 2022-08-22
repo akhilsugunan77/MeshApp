@@ -173,6 +173,10 @@ button {
   display: block;
 }
 
+.ib {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -1224,11 +1228,21 @@ button {
 .hero .content .heading span {
   font-weight: 300;
 }
+@media screen and (max-width: 599px) {
+  .hero .content .heading {
+    font-size: 30px;
+  }
+}
 .hero .content .description {
   font-size: 25px;
   font-weight: 300;
   letter-spacing: 0.65px;
   padding-right: 50px;
+}
+@media screen and (max-width: 599px) {
+  .hero .content .description {
+    font-size: 20px;
+  }
 }
 .hero .content .btn-wrapper {
   display: flex;
@@ -1252,6 +1266,11 @@ button {
   font-size: 50px;
   letter-spacing: 1.3px;
 }
+@media screen and (max-width: 599px) {
+  .features .heading {
+    font-size: 30px;
+  }
+}
 .features .feature-content {
   display: flex;
   justify-content: space-evenly;
@@ -1263,6 +1282,11 @@ button {
   font-size: 30px;
   letter-spacing: 0.78px;
   font-weight: 600;
+}
+@media screen and (max-width: 599px) {
+  .features .feature-content .heading {
+    font-size: 20px;
+  }
 }
 .features .feature-content article {
   display: flex;
@@ -1309,15 +1333,30 @@ button {
   letter-spacing: 1.23px;
   color: #3f3f3f;
 }
+@media screen and (max-width: 599px) {
+  .highlighted .content .heading {
+    font-size: 30px;
+  }
+}
 .highlighted .content .sub-heading {
   font-size: 30px;
   letter-spacing: 0.92px;
   color: #7a7a7a;
 }
+@media screen and (max-width: 599px) {
+  .highlighted .content .sub-heading {
+    font-size: 20px;
+  }
+}
 .highlighted .content .description {
   font-size: 22px;
   letter-spacing: 0.68px;
   color: #3f3f3f;
+}
+@media screen and (max-width: 599px) {
+  .highlighted .content .description {
+    font-size: 16px;
+  }
 }
 .highlighted .img-content {
   max-width: 500px;
@@ -1336,10 +1375,20 @@ button {
   line-height: 55px;
   letter-spacing: 1.3px;
 }
+@media screen and (max-width: 599px) {
+  .newsletter .heading {
+    font-size: 30px;
+  }
+}
 .newsletter .description {
   color: #3f3f3f;
   font-size: 25px;
   letter-spacing: 0.65px;
+}
+@media screen and (max-width: 599px) {
+  .newsletter .description {
+    font-size: 20px;
+  }
 }
 .newsletter .input-container {
   display: flex;
@@ -1372,6 +1421,11 @@ footer {
   font-size: 20px;
   letter-spacing: 0.19px;
   font-weight: 600;
+}
+@media screen and (max-width: 599px) {
+  footer {
+    font-size: 16px;
+  }
 }
 footer .copyright {
   display: inline-block;

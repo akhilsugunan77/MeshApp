@@ -72,8 +72,15 @@ function buildFont(){
     .pipe(gulp.dest("./public/assets/fonts/"))
 }
 
+function build(){
+    buildHtml();
+    buildJs();
+    buildStyle();
+    buildFont()
+}
 
 
+exports.build=build;
 exports.buildHtml=buildHtml;
 exports.buildJs=buildJs;
 exports.buildStyle=buildStyle;
