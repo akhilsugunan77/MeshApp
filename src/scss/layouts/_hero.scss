@@ -6,6 +6,10 @@
     @include size(100%,100%);
     min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
     header{
         position: relative;
     }
@@ -31,9 +35,6 @@
         flex-direction: column;
         justify-content: center;
         gap: 68px;
-        @include media(desktop){
-            align-self: center;
-        }
         @include media(mobile){
             gap: 40px;
         }
@@ -72,5 +73,7 @@
         display: flex;
         max-width: 520px;
         max-height: 612px;
+        position: relative;
+        right: -20px;
     }
 }

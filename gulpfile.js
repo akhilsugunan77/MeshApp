@@ -59,7 +59,7 @@ function buildStyle(){
 function buildJs(){
     return gulp.src("./src/js/**/*.js")
     .pipe(concat("main.js"))
-    .pipe(gulp.dest("./public/js"))
+    .pipe(gulp.dest("./public/script"))
 }
 
 function buildHtml(){
