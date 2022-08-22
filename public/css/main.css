@@ -1196,6 +1196,11 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 599px) {
+  .hero div.container {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .hero div.container {
     flex-direction: row;
@@ -1213,6 +1218,11 @@ button {
 @media screen and (min-width: 1000px) {
   .hero .content {
     align-self: center;
+  }
+}
+@media screen and (max-width: 599px) {
+  .hero .content {
+    gap: 40px;
   }
 }
 .hero .content .heading {
@@ -1264,6 +1274,7 @@ button {
 @media screen and (max-width: 599px) {
   .features .heading {
     font-size: 30px;
+    margin-top: 40px;
   }
 }
 .features .feature-content {
@@ -1271,6 +1282,13 @@ button {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 60px;
+}
+@media screen and (max-width: 599px) {
+  .features .feature-content {
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 .features .feature-content .heading {
   color: #3f3f3f;
@@ -1294,6 +1312,11 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
+}
+@media screen and (max-width: 599px) {
+  .features .btn-wrapper {
+    gap: 30px;
+  }
 }
 .features .btn-wrapper .button-outline-primary {
   border: none;
@@ -1322,6 +1345,11 @@ button {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
+}
+@media screen and (max-width: 599px) {
+  .highlighted .content {
+    height: 400px;
+  }
 }
 .highlighted .content .heading {
   font-size: 40px;
@@ -1373,6 +1401,8 @@ button {
 @media screen and (max-width: 599px) {
   .newsletter .heading {
     font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 .newsletter .description {
@@ -1383,6 +1413,7 @@ button {
 @media screen and (max-width: 599px) {
   .newsletter .description {
     font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 .newsletter .input-container {
@@ -1390,6 +1421,12 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
+}
+@media screen and (max-width: 599px) {
+  .newsletter .input-container {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
 }
 .newsletter .input-container .input {
   max-width: 500px;
@@ -1420,6 +1457,11 @@ footer {
 @media screen and (max-width: 599px) {
   footer {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 599px) {
+  footer .footer-logo {
+    margin-top: 30px;
   }
 }
 footer .copyright {
