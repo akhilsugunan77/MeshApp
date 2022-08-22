@@ -37,12 +37,11 @@ exports.bundlejs = bundlejs;
 
 // Image minification
 
-
 // import gulp from 'gulp';
 // import imagemini from 'gulp-imagemin';
  
 // gulp.task('miniImg',()=>{
-//     return gulp.src("src/assets/Images/**/*")
+//     return gulp.src("src/assets/Images/**/*.png")
 //     .pipe(imagemini())
 //     .pipe(gulp.dest("public/assets/Images"))
 // })
@@ -68,6 +67,14 @@ function buildHtml(){
     .pipe(gulp.dest("./public/"))
 }
 
+function buildFont(){
+    return gulp.src("./src/assets/fonts/**/*")
+    .pipe(gulp.dest("./public/assets/fonts/"))
+}
+
+
+
 exports.buildHtml=buildHtml;
 exports.buildJs=buildJs;
 exports.buildStyle=buildStyle;
+exports.buildFont=buildFont;
