@@ -8,6 +8,7 @@
         letter-spacing: 1.3px;
         @include media(mobile){
             font-size: 30px;
+            margin-top: 40px;
         }
     }
     .feature-content{
@@ -15,6 +16,11 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 60px;
+        @include media(mobile){
+           gap: 30px; 
+           margin-top: 40px;
+           margin-bottom: 40px;
+        }
         .heading{
             color: $tertiary-color;
             font-size: 30px;
@@ -36,6 +42,9 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 60px;
+        @include media(mobile){
+            gap: 30px;   
+        }
         .button-outline-primary{
             border: none;
         }

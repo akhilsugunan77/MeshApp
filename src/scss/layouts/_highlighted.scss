@@ -12,6 +12,9 @@
     }
     .content{
         height: 650px;
+        @include media(mobile){
+            height: 400px;
+        }
         max-width: 600px;
         width: 100%;
         position: relative;

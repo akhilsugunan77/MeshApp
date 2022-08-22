@@ -12,6 +12,8 @@
         letter-spacing: 1.3px;
         @include media(mobile){
                 font-size: 30px;
+                margin-top: 30px;
+                margin-bottom: 30px;
         }
     }
     .description{
@@ -20,6 +22,7 @@
         letter-spacing: 0.65px;
         @include media(mobile){
                 font-size: 20px;
+                margin-bottom: 30px;
         }
     }
 
@@ -28,6 +31,10 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
+        @include media(mobile){
+            gap: 30px;
+            margin-bottom: 60px;
+        }
         .input{
             max-width: 500px;
             width: 100%;
