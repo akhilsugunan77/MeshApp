@@ -10,7 +10,7 @@
                     background-color: $secondary-color;
                     transition: transform 200ms linear;
                     transform-origin: center;
-                    transform: scaleX(0)
+                    transform: scaleX(0);
                 }
                 &:hover::before{
                     transform: scaleX(1);

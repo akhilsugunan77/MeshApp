@@ -7,11 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-block: 20px;
     padding-inline: 20px;
     @include media (desktop){
         padding-inline:10px;
-        padding-top: 66px;
     }
     .navigation-listitem{
         display: none;
@@ -43,7 +42,6 @@
     z-index: 3;
     border-radius: 50px 0 0 50px;
     background-color: $theme-color-2;
-    // @extend .spotlight;
     .navigation-listitem{
         display: flex;
         flex-direction: column;

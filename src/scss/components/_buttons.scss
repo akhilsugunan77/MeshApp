@@ -24,10 +24,10 @@
 
 .button-outline-primary{
     background-color: transparent;
-    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
     border: solid 2px $quaternary-color;
     @extend %button;
     transition: box-shadow 500ms linear;
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
     &:hover{
         box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2);
     }
@@ -48,6 +48,8 @@
         @include size(150px,50px);
         font-size: 20px;
     }
+    transition: box-shadow 500ms linear;
+    box-shadow: 0 6px 9px 0 rgba(244, 214, 58, 0.2);
     &:hover{
         box-shadow: 0 6px 9px 0 rgba(244, 214, 58, 0.59);
     }

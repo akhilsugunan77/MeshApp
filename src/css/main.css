@@ -161,6 +161,19 @@ button {
   background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
 }
 
+.spotlight2 {
+  background-image: linear-gradient(90deg, #fceb6f 17%, #fede60 77%);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .bg-highlighted {
   background-color: #f8f8f8;
 }
@@ -1024,13 +1037,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-block: 20px;
   padding-inline: 20px;
 }
 @media screen and (min-width: 1000px) {
   .navigation {
     padding-inline: 10px;
-    padding-top: 66px;
   }
 }
 .navigation .navigation-listitem {
@@ -1156,9 +1168,9 @@ button {
 
 .button-outline-primary {
   background-color: transparent;
-  box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
   border: solid 2px #3e3e3e;
   transition: box-shadow 500ms linear;
+  box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.08);
 }
 .button-outline-primary:hover {
   box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2);
@@ -1174,6 +1186,8 @@ button {
   border-radius: 0;
   width: 173px;
   height: 70px;
+  transition: box-shadow 500ms linear;
+  box-shadow: 0 6px 9px 0 rgba(244, 214, 58, 0.2);
 }
 @media screen and (max-width: 599px) {
   .button-secondary {
@@ -1213,6 +1227,7 @@ button {
   width: 100%;
   height: 70px;
   padding-left: 30px;
+  transition: box-shadow 500ms linear;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.11);
   font-size: 20px;
   letter-spacing: 0.52px;
@@ -1246,21 +1261,25 @@ button {
   height: 100%;
   width: 168px;
   background-color: #ffcb00;
+  opacity: 0.46;
   z-index: -1;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
 .hero {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 40px;
-}
-.hero header {
-  position: relative;
 }
 .hero div.container {
   height: 90%;
@@ -1268,15 +1287,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-@media screen and (max-width: 599px) {
-  .hero div.container {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
 }
 @media screen and (min-width: 1000px) {
   .hero div.container {
     flex-direction: row;
+    margin-top: 0;
   }
 }
 .hero .content {
