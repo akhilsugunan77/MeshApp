@@ -1038,7 +1038,6 @@ button {
   align-items: center;
   justify-content: space-between;
   padding-block: 20px;
-  padding-inline: 20px;
 }
 @media screen and (min-width: 1000px) {
   .navigation {
