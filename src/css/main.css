@@ -1151,6 +1151,7 @@ button {
   font-size: 25px;
   letter-spacing: 0.65px;
   border-radius: 12px;
+  padding-inline: 10px;
 }
 @media screen and (max-width: 599px) {
   .button-outline-secondary, .button-secondary, .button-outline-primary, .button-primary {
@@ -1164,6 +1165,11 @@ button {
   height: 40px;
   object-fit: contain;
   object-position: center;
+}
+.button-outline-secondary .button-text, .button-secondary .button-text, .button-outline-primary .button-text, .button-primary .button-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .button-primary {
