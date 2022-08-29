@@ -59,7 +59,7 @@ exports.webpConvert=webpConvert;
 //     .pipe(gulp.dest("public/assets/Images"))
 // })
 
-build
+// build
 
 function buildStyle(){
     return gulp.src("./src/scss/**/*.scss")
@@ -85,12 +85,7 @@ function buildFont(){
     .pipe(gulp.dest("./public/assets/fonts/"))
 }
 
-function build(){
-    buildHtml();
-    buildJs();
-    buildStyle();
-    buildFont()
-}
+
 
 
 exports.build=build;
